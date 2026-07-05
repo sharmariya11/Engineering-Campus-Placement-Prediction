@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="result-container">
+
+        <h1 class="result-title">
+            Placement Prediction Result
+        </h1>
+
+        <div class="result-card">
+
+            {% if prediction == "Placed" %}
+
+                <h2 class="success">
+                    🎉 Congratulations!
+                </h2>
+
+                <p class="result success">
+                    You are likely to be Placed.
+                </p>
+
+            {% elif prediction == "Not Placed" %}
+
+                <h2 class="failure">
+                    ⚠ Better Luck Next Time!
+                </h2>
+
+                <p class="result failure">
+                    You are likely to be Not Placed.
+                </p>
+
+            {% else %}
+
+                <h2>
+                    Prediction
+                </h2>
+
+                <p class="result">
+                    {{ prediction }}
+                </p>
+
+            {% endif %}
+
+        </div>
+
+        <a href="/">
+
+            <button>
+
+                Predict Again
+
+            </button>
+
+        </a>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

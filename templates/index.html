@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Placement Prediction System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Placement Prediction</h1>
+
+    <p class="subtitle">
+
+        Enter your academic details to predict placement chances.
+
+    </p>
+
+    <form action="/predict" method="POST">
+
+        <!-- Gender -->
+
+        <div class="form-group">
+
+            <label>Gender</label>
+
+            <select name="Gender" required>
+
+                <option value="">Select Gender</option>
+
+                <option value="Male">Male</option>
+
+                <option value="Female">Female</option>
+
+            </select>
+
+        </div>
+
+        <!-- 10th Board -->
+
+        <div class="form-group">
+
+            <label>10th Board</label>
+
+            <input
+                type="text"
+                name="10th_board"
+                placeholder="CBSE / ICSE / State Board"
+                required>
+
+        </div>
+
+        <!-- 10th Marks -->
+
+        <div class="form-group">
+
+            <label>10th Marks (%)</label>
+
+            <input
+                type="number"
+                step="0.01"
+                min="0"
+                max="100"
+                name="10th_marks"
+                required>
+
+        </div>
+
+        <!-- 12th Board -->
+
+        <div class="form-group">
+
+            <label>12th Board</label>
+
+            <input
+                type="text"
+                name="12th_board"
+                placeholder="CBSE / ICSE / State Board"
+                required>
+
+        </div>
+
+        <!-- 12th Marks -->
+
+        <div class="form-group">
+
+            <label>12th Marks (%)</label>
+
+            <input
+                type="number"
+                step="0.01"
+                min="0"
+                max="100"
+                name="12th_marks"
+                required>
+
+        </div>
+
+        <!-- Stream -->
+
+        <div class="form-group">
+
+            <label>Stream</label>
+
+            <select name="Stream" required>
+
+                <option value="">Select Stream</option>
+
+                <option value="Science">Science</option>
+
+                <option value="Commerce">Commerce</option>
+
+                <option value="Arts">Arts</option>
+
+            </select>
+
+        </div>
+
+        <!-- CGPA -->
+
+        <div class="form-group">
+
+            <label>CGPA</label>
+
+            <input
+                type="number"
+                step="0.01"
+                min="0"
+                max="10"
+                name="Cgpa"
+                required>
+
+        </div>
+
+        <!-- Internship -->
+
+        <div class="form-group">
+
+            <label>Internship</label>
+
+            <select name="Internship" required>
+
+                <option value="">Select</option>
+
+                <option value="Yes">Yes</option>
+
+                <option value="No">No</option>
+
+            </select>
+
+        </div>
+
+        <!-- Training -->
+
+        <div class="form-group">
+
+            <label>Training</label>
+
+            <select name="Training" required>
+
+                <option value="">Select</option>
+
+                <option value="Yes">Yes</option>
+
+                <option value="No">No</option>
+
+            </select>
+
+        </div>
+
+        <!-- Backlog -->
+
+        <div class="form-group">
+
+            <label>Backlog in 5th Semester</label>
+
+            <select name="Backlog" required>
+
+                <option value="">Select</option>
+
+                <option value="Yes">Yes</option>
+
+                <option value="No">No</option>
+
+            </select>
+
+        </div>
+
+        <!-- Project -->
+
+        <div class="form-group">
+
+            <label>Innovative Project</label>
+
+            <select name="Project" required>
+
+                <option value="">Select</option>
+
+                <option value="Yes">Yes</option>
+
+                <option value="No">No</option>
+
+            </select>
+
+        </div>
+
+        <!-- Communication -->
+
+        <div class="form-group">
+
+            <label>Communication Level (1-5)</label>
+
+            <select name="Communication" required>
+
+                <option value="">Select</option>
+
+                <option value="1">1 - Poor</option>
+
+                <option value="2">2 - Average</option>
+
+                <option value="3">3 - Good</option>
+
+                <option value="4">4 - Very Good</option>
+
+                <option value="5">5 - Excellent</option>
+
+            </select>
+
+        </div>
+
+        <!-- Technical Course -->
+
+        <div class="form-group">
+
+            <label>Technical Course</label>
+
+            <select name="TechnicalCourse" required>
+
+                <option value="">Select</option>
+
+                <option value="Yes">Yes</option>
+
+                <option value="No">No</option>
+
+            </select>
+
+        </div>
+
+        <!-- Button -->
+
+        <div class="button-container">
+
+            <button type="submit">
+
+                Predict Placement
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
