@@ -1,46 +1,167 @@
-# 🎓 Student Placement Prediction System
+# 🎓 Engineering Campus Placement Prediction
 
-A Machine Learning web application built with Flask that predicts whether a student is likely to be placed based on academic and skill-related information.
+A Machine Learning web application that predicts whether a student is likely to be placed based on their academic performance and skill-related information. The application is built using **Flask** and **Scikit-learn** and is deployed on **Render**.
 
-## Features
+---
 
-- Student placement prediction
-- Machine Learning model
-- Flask web application
-- Responsive UI
-- Real-time prediction
+## 🌐 Live Demo
 
-## Technologies Used
+🚀 **Live Website**
 
-- Python
+(https://engineering-campus-placement-prediction.onrender.com)
+
+
+
+## 📌 Features
+
+- 🎯 Predicts student placement using Machine Learning
+- 📊 Real-time prediction
+- 🎓 Academic details based prediction
+- 💻 Responsive user interface
+- ⚡ Fast Flask backend
+- ☁️ Deployed on Render
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+
 - Flask
+
+### Machine Learning
+
 - Scikit-Learn
 - Pandas
 - NumPy
-- HTML
-- CSS
-- JavaScript
+- Joblib
 
-## Project Structure
+### Deployment
 
-```
-Student-Placement-Prediction/
+- Render
+
+---
+
+## 📂 Project Structure
+
+```text
+Engineering-Campus-Placement-Prediction/
 │
 ├── app.py
-├── artifacts/
-├── templates/
-├── static/
 ├── requirements.txt
-└── README.md
+├── Procfile
+├── README.md
+├── .gitignore
+│
+├── artifacts/
+│   ├── model.pkl
+│   └── preprocessor.pkl
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
+│
+└── screenshots/
+    ├── home.png
+    └── result.png
 ```
 
-## Installation
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/sharmariya11/Engineering-Campus-Placement-Prediction.git
+```
+
+Move into the project folder
+
+```bash
+cd Engineering-Campus-Placement-Prediction
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
 python app.py
 ```
 
-## Author
+Open your browser
 
-Riya Sharma
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 📊 Machine Learning Workflow
+
+- Data Collection
+- Data Preprocessing
+- Feature Engineering
+- Column Transformer
+- Model Training
+- Model Serialization
+- Flask Integration
+- Prediction
+
+---
+
+## 📷 Screenshots
+
+### 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+---
+
+### 🎯 Prediction Result
+
+![Prediction Result](screenshots/result.png)
+
+---
+
+## 🔮 Future Improvements
+
+- Prediction Confidence Score
+- Student Dashboard
+- Better UI/UX
+- Dark Mode
+- PDF Report Generation
+- Placement Analytics Dashboard
+
+---
+
+## 👩‍💻 Author
+
+**Riya Sharma**
+
+B.Tech Student
+
+GitHub:
+
+https://github.com/sharmariya11
+
+---
+
+⭐ If you like this project, don't forget to star this repository.
