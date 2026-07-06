@@ -1,29 +1,29 @@
-# 🎓 Engineering Campus Placement Prediction
+#Engineering Campus Placement Prediction
 
 A Machine Learning web application that predicts whether a student is likely to be placed based on their academic performance and skill-related information. The application is built using **Flask** and **Scikit-learn** and is deployed on **Render**.
 
 ---
 
-## 🌐 Live Demo
+##Live Demo
 
-🚀 **Live Website**
+**Live Website**
 
 (https://engineering-campus-placement-prediction.onrender.com)
 
 
 
-## 📌 Features
+## Features
 
-- 🎯 Predicts student placement using Machine Learning
-- 📊 Real-time prediction
-- 🎓 Academic details based prediction
-- 💻 Responsive user interface
-- ⚡ Fast Flask backend
-- ☁️ Deployed on Render
+- Predicts student placement using Machine Learning
+- Real-time prediction
+- Academic details based prediction
+- Responsive user interface
+- Fast Flask backend
+- Deployed on Render
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -48,7 +48,7 @@ A Machine Learning web application that predicts whether a student is likely to 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Engineering-Campus-Placement-Prediction/
@@ -80,7 +80,7 @@ Engineering-Campus-Placement-Prediction/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 Clone the repository
 
@@ -114,7 +114,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📊 Machine Learning Workflow
+## Machine Learning Workflow
 
 - Data Collection
 - Data Preprocessing
@@ -127,21 +127,21 @@ http://127.0.0.1:5000
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
-### 🏠 Home Page
+### Home Page
 
 ![Home Page](screenshots/home.png)
 
 ---
 
-### 🎯 Prediction Result
+### Prediction Result
 
 ![Prediction Result](screenshots/result.png)
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Prediction Confidence Score
 - Student Dashboard
@@ -152,7 +152,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Riya Sharma**
 
@@ -163,5 +163,4 @@ GitHub:
 https://github.com/sharmariya11
 
 ---
-
-⭐ If you like this project, don't forget to star this repository.
+If you like this project, don't forget to star this repository.
